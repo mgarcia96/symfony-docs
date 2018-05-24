@@ -579,7 +579,7 @@ service::
 
         public function someMethod()
         {
-            $url = $this->router->generate(
+            $url = $this->get('router')->generate(
                 'blog_show',
                 array('slug' => 'my-blog-post')
             );
